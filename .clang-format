@@ -1,0 +1,25 @@
+BasedOnStyle: Microsoft
+AccessModifierOffset: -4
+ColumnLimit: 120
+
+AllowShortFunctionsOnASingleLine: Inline
+
+PointerAlignment: Left
+
+BinPackArguments: false
+BinPackParameters: false
+
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowAllArgumentsOnNextLine: false
+
+PenaltyBreakBeforeFirstCallParameter: 0
+PenaltyExcessCharacter: 1
+
+Cpp11BracedListStyle: true
+SortIncludes: false
+
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+
+AlwaysBreakTemplateDeclarations: Yes
+BreakConstructorInitializers: BeforeComma
