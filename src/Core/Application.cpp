@@ -145,7 +145,10 @@ void Application::InitOpenGL()
         throw std::runtime_error("Failed to initialize GLAD");
     }
 
-    glViewport(0, 0, m_Width, m_Height);
+    // 获取帧缓冲区尺寸而不是窗口尺寸
+    int framebufferWidth, framebufferHeight;
+    glfwGetFramebufferSize(m_Window.get(), &framebufferWidth, &framebufferHeight);
+    glViewport(0, 0, framebufferWidth, framebufferHeight);
 }
 
 } // namespace Core
